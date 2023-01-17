@@ -61,8 +61,7 @@ const mystyle={
       <div className="container" style={{color : props.mode==='dark'?'white':'black'}}>
           <h2 className="alert alert-primary h5">Your Text Summary </h2>
           <p>{(text.split(" ").filter((element)=>{return element.length!==0 }).length)} Words and {text.length} characters</p>
-          <p>Normal users takes {((.2 * text.split(" ").filter((element)=>{return element.length!==0 }).length)/60).toFixed(2) } Minutes to Read</p>
-          
+          <p>Normal users takes {((0.008 * text.split(" ").filter((element)=>{return element.length!==0 }).length)).toFixed(2) } Minutes to Read</p>
           <h3 className="alert alert-primary h5">Preview</h3>
           <p>{text}</p>
       </div>
