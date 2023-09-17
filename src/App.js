@@ -83,12 +83,13 @@ function App() {
   return (
     <>
       <Router>
+     <Routes>
         <Navbar title={<img src={logo} alt="logo" style={mystyle}/>} mode={mode} toggleMode={toggleMode} redMode={redMode} greenMode={greenMode} BlueMode={BlueMode} />
         <Alert alert={alert} />
         <div className="container my-3" >
       
         
-    <Routes>
+   
       <Route exact path="/" element={<Textform heading="Enter Your Text Below " mode={mode} showAlert={showAlert} />} />
       <Route exact path="/about" element={<About mode={mode}/>} />
   
