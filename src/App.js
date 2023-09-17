@@ -90,7 +90,7 @@ function App() {
       
         
    
-      <Route exact path="/" element={<Textform heading="Enter Your Text Below " mode={mode} showAlert={showAlert} />} />
+      <Route exact path="/TextEditorWebApp" element={<Textform heading="Enter Your Text Below " mode={mode} showAlert={showAlert} />} />
       <Route exact path="/about" element={<About mode={mode}/>} />
   
     </Routes>
